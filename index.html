@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css
+    "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Tailwind CSS</title>
+  </head>
+  <body>
+    <nav class="container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <img
+            src="./dist/images/Tailwind_CSS_logo.svg.png"
+            alt="Tailwind Logo"
+            width="200px"
+          />
+        </div>
+        <div class="hidden md:flex items-center space-x-6 text-accent">
+          <a href="#" class="text-slate-900 hover:text-secondary">Portfolio</a>
+          <a href="#" class="text-slate-900 hover:text-secondary">About</a>
+          <a href="#" class="text-slate-900 hover:text-secondary">Contact</a>
+          <a href="#" class="text-slate-900 hover:text-secondary">Social</a>
+          <a
+            href="#"
+            class="bg-accent text-primary font-bold py-2 px-4 rounded-full hover:bg-secondary transition duration-300"
+            >Call Me</a
+          >
+        </div>
+        <button id="mobile-btn" class="md:hidden">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section
+      id="hero"
+      class="flex flex-col-reverse md:flex-row items-center justify-center h-screen"
+    >
+      <div class="w-full md:w-1/2 text-center p-6">
+        <h1 class="text-4xl font-bold text-primary mb-4">
+          Welcome to Tailwind CSS
+        </h1>
+        <p class="text-lg text-secondary mb-6">
+          Tailwind CSS makes it easy to build responsive, custom-designed
+          websites quickly and efficiently.
+        </p>
+        <a
+          href="#"
+          class="bg-accent text-primary font-bold py-2 px-4 rounded-full hover:bg-secondary transition duration-300"
+          >Get Started</a
+        >
+      </div>
+      <div class="w-full md:w-1/2">
+        <img
+          src="./dist/images/undraw_apps_bqvc.svg"
+          alt="Tailwind Hero"
+          class="mx-auto"
+        />
+      </div>
+    </section>
+
+    <section id="author" class="my-32">
+      <div class="container mx-auto text-center px-5">
+        <h2 class="text-3xl font-bold text-primary mb-4">
+          “Best practices” don’t actually work.
+        </h2>
+        <p class="mt-8 max-w-5xl mx-auto text-secondary">
+          I’ve written a few thousand words on why traditional “semantic class
+          names” are the reason CSS is hard to maintain, but the truth is you’re
+          never going to believe me until you actually try it. If you can
+          suppress the urge to retch long enough to give it a chance, I really
+          think you’ll wonder how you ever worked with CSS any other way.
+        </p>
+        <div
+          class="mt-10 flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0"
+        >
+          <div
+            class="bg-background items-center md:w-1/3 flex flex-col p-6 space-y-2 rounded-lg border border-accent"
+          >
+            <img
+              src="./dist/images/adam.jpg"
+              alt="adam"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-primary">Adam Sandler</h5>
+            <p class="leading-5 text-sm text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolorum voluptas quidem! Maiores repellat ut architecto facilis
+              ipsum sunt nostrum.
+            </p>
+          </div>
+
+          <div
+            class="bg-background items-center md:w-1/3 flex flex-col p-6 space-y-2 rounded-lg border border-accent"
+          >
+            <img
+              src="./dist/images/Debbie.jpg"
+              alt="Debbie O'Brien"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-primary">Debbie O'Brien</h5>
+            <p class="leading-5 text-sm text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolorum voluptas quidem! Maiores repellat ut architecto facilis
+              ipsum sunt nostrum.
+            </p>
+          </div>
+
+          <div
+            class="bg-background items-center md:w-1/3 flex flex-col p-6 space-y-2 rounded-lg border border-accent"
+          >
+            <img
+              src="./dist/images/Nor.jpg"
+              alt="Nor"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-primary">Guillermo Rauch</h5>
+            <p class="leading-5 text-sm text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolorum voluptas quidem! Maiores repellat ut architecto facilis
+              ipsum sunt nostrum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-secondary">
+      <div
+        class="container mx-auto flex flex-col md:flex-row text-white px-5 py-10 justify-between items-center space-y-8 md:space-y-0"
+      >
+        <div
+          class="flex flex-col items-center justify-between space-y-8 md:space-y-2 md:items-start md:flex-row"
+        >
+          <img
+            src="./dist/images/Tailwind_CSS_logo.svg.png"
+            alt="Logo"
+            class="h-8"
+          />
+          <div class="flex space-x-4 items-center">
+            <a href="#"><i class="ri-facebook-box-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-instagram-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-youtube-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+            <a href="#"><i class="ri-twitter-x-fill text-3xl"></i></a>
+          </div>
+        </div>
+
+        <div class="flex justify-around space-x-32">
+          <a href="#" class="text-white mr-6 hover:text-primary">Home</a>
+          <a href="#" class="text-white mr-6 hover:text-primary">About</a>
+          <a href="#" class="text-white hover:text-primary">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("mobile-btn")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+          } else {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+    </script>
+  </body>
+</html>
